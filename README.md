@@ -28,7 +28,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 `变量作用域`
 
-[变量作用域](./img/bianliangzuoyongyu.png)
+[变量作用域](img/bianliangzuoyongyu.png)
 
 如果变量在函数内没有声明（没有使用 var 关键字），该变量为全局变量。<br>
 以下实例中 carName 在函数内，但是为全局变量。<br>
