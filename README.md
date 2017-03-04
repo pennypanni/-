@@ -13,7 +13,7 @@ git clone -b v2 http://git.showgold.cn:8081/wabg/download.git
 
 DOM (Document Object Model)（文档对象模型）是用于访问 HTML 元素的正式 W3C 标准。
 
-外部的JavaScript文件不能包含 <script> 标签。
+外部的JavaScript文件不能包含 &lt;script&gt; 标签。
 
 JavaScript 可以通过不同的方式来输出数据：
 * 使用 window.alert() 弹出警告框。
@@ -29,3 +29,16 @@ JavaScript 可以通过不同的方式来输出数据：
 `变量作用域`
 
 [变量作用域](./img/bianliangzuoyongyu.png)
+
+如果变量在函数内没有声明（没有使用 var 关键字），该变量为全局变量。<br>
+以下实例中 carName 在函数内，但是为全局变量。<br>
+```javascript
+// 此处可调用 carName 变量
+
+function myFunction() {
+    carName = "Volvo";
+
+    // 此处可调用 carName 变量
+
+}
+```
