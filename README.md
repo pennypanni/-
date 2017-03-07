@@ -85,5 +85,6 @@ function myFunction(){
 #### constructor 属性
 
 constructor 属性返回所有 JavaScript 变量的构造函数。
+
 ![constructor](img/constructor.png)
 
