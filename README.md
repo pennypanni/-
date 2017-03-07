@@ -88,7 +88,7 @@ constructor 属性返回所有 JavaScript 变量的构造函数。
 
 ![constructor](img/constructor.png)
 
-#### 换为字符串
+#### 转为字符串
 
 * 全局方法 String()
 	```javascript
@@ -96,10 +96,48 @@ constructor 属性返回所有 JavaScript 变量的构造函数。
 	String(123)       // 将数字 123 转换为字符串并返回
 	String(100 + 23)  // 将数字表达式转换为字符串并返回，结果为123
 	```
-	
+
 * toString()
 	```javascript
 	x.toString()
 	(123).toString()
 	(100 + 23).toString()
 	```
+
+#### 转为数字 Number()
+
+空字符串转换为 0。<br>
+其他的字符串会转换为 NaN (不是个数字)。
+
+```javascript
+Number("3.14")    // 返回 3.14
+Number(" ")       // 返回 0 
+Number("")        // 返回 0
+Number("99 88")   // 返回 NaN
+Number(false)     // 返回 0
+Number(true)      // 返回 1
+```
+
+#### search() & replace()使用正则表达式
+
+```javascript
+var str = "Visit w3cschool";
+var n = str.search(/w3cschool/i);      //i：表示不区分大小写。结果返回子字符串的起始位置6
+```
+
+```javascript
+var str = "Visit Microsoft!";
+var res = str.replace(/microsoft/i, "w3cschool");     //结果为：Visit w3cschool!
+```
+
+#### 正则表达式修饰符
+
+| 修饰符        | 描述           |
+
+| ------------- |:-------------:|
+
+| i             | 执行对大小写不敏感的匹配。 |
+
+| g             | 执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。 |
+
+| m             | 执行多行匹配。 |
