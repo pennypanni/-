@@ -88,3 +88,18 @@ constructor 属性返回所有 JavaScript 变量的构造函数。
 
 ![constructor](img/constructor.png)
 
+#### 换为字符串
+
+* 全局方法 String()
+	```javascript
+	String(x)         // 将变量 x 转换为字符串并返回
+	String(123)       // 将数字 123 转换为字符串并返回
+	String(100 + 23)  // 将数字表达式转换为字符串并返回，结果为123
+	```
+	
+* toString()
+	```javascript
+	x.toString()
+	(123).toString()
+	(100 + 23).toString()
+	```
