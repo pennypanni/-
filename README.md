@@ -167,3 +167,57 @@ method 属性规定如何发送表单数据（表单数据发送到 action 属�
 \# 包含了一个位置信息，默认的锚是\#top 也就是网页的上端。而javascript:void(0), 仅仅表示一个死链接。<br>
 在页面很长的时候会使用 \# 来定位页面的具体位置，格式为：\# + id。<br>
 如果你要定义一个死链接请使用 javascript:void(0) 。
+
+#### Arguments 对象
+
+arguments 对象包含了函数调用的参数数组。
+
+```javascript
+x = findMax(1, 123, 500, 115, 44, 88);
+
+function findMax() {
+    var i, max = 0;
+    for (i = 0; i < arguments.length; i++) {
+        if (arguments[i] > max) {
+            max = arguments[i];
+        }
+    }
+    return max;
+}
+```
+
+#### onload 和 onunload 事件
+
+onload 和 onunload 事件会在用户进入或离开页面时被触发。onload 事件可用于检测访问者的浏览器类型和浏览器版本，并基于这些信息来加载网页的正确版本。onload 和 onunload 事件可用于处理 cookie。
+
+```javascript
+<body onload="checkCookies()">
+	<script>
+	function checkCookies(){
+		if (navigator.cookieEnabled==true){
+			alert("Cookies 可用")
+		}
+		else{
+			alert("Cookies 不可用")
+		}
+	}
+	</script>	
+</body>
+```
+
+#### addEventListener() 方法
+```javascript
+document.getElementById("myBtn").addEventListener("click", displayDate);
+```
+你可以使用 removeEventListener() 方法来移除事件的监听。
+
+`注意:不要使用 "on" 前缀。 例如，使用 "click" ,而不是使用 "onclick"。`
+
+#### 事件冒泡和事件捕获
+
+在 *冒泡* 中，内部元素的事件会先被触发，然后再触发外部元素。在 *捕获* 中，外部元素的事件会先被触发，然后才会触发内部元素的事件。<br>
+addEventListener() 方法可以指定 "useCapture" 参数来设置传递类型：<br>
+```javascript
+addEventListener(event, function, useCapture);
+```
+默认值为 false, 即冒泡传递，当值为 true 时, 事件使用捕获传递。
