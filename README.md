@@ -137,3 +137,21 @@ var res = str.replace(/microsoft/i, "w3cschool");     //结果为：Visit w3csch
 | i             | 执行对大小写不敏感的匹配。    |
 | g             | 执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。 |
 | m             | 执行多行匹配。   |
+
+#### test() & exec()
+
+test() : 如果字符串中含有匹配的文本，则返回 true，否则返回 false。
+```javascript
+/e/.test("The best things in life are free!")      //结果为 true
+```
+
+exec() ： 该函数返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为 null。
+```javascript
+/are/.exec("The best things in life are free!");     //结果为 are
+```
+
+#### [&lt;form&gt; 标签的 method 属性](http://www.w3school.com.cn/tags/att_form_method.asp)
+
+method 属性规定如何发送表单数据（表单数据发送到 action 属性所规定的页面）。<br>
+表单数据可以作为 URL 变量（method="get"，GET 方法将表单参数直接放在URL 中）或者 HTTP post （method="post"，加密）的方式来发送。
+
