@@ -306,20 +306,20 @@ document.write(z + "<br>");     //255，(15*16^0 + 15*16^1)
 
 #### 可以不使用 window 这个前缀的：
 
-* screen.availWidth - 可用的屏幕宽度
-* screen.availHeight - 可用的屏幕高度
+screen.availWidth - 可用的屏幕宽度<br>
+screen.availHeight - 可用的屏幕高度
 
 
-* location.hostname - 返回 web 主机的域名
-* location.pathname - 返回当前页面的路径和文件名
-* location.port - 返回 web 主机的端口 （80 或 443）
-* location.protocol - 返回所使用的 web 协议（http:// 或 https://）
-* location.href - 返回当前页面的 URL
-* location.assign - 加载新的文档
+location.hostname - 返回 web 主机的域名<br>
+location.pathname - 返回当前页面的路径和文件名<br>
+location.port - 返回 web 主机的端口 （80 或 443）<br>
+location.protocol - 返回所使用的 web 协议（http:// 或 https://）<br>
+location.href - 返回当前页面的 URL<br>
+location.assign - 加载新的文档
 
 
-* history.back() - 加载历史列表中的前一个 URL。这与在浏览器中点击后退按钮是相同的。
-* history.forward() - 加载历史列表中的下一个 URL。这与在浏览器中点击前进按钮是相同的。
+history.back() - 加载历史列表中的前一个 URL。这与在浏览器中点击后退按钮是相同的。<br>
+history.forward() - 加载历史列表中的下一个 URL。这与在浏览器中点击前进按钮是相同的。
 
 
 window.navigator 对象在编写时可不使用 window 这个前缀。
