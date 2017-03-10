@@ -308,9 +308,31 @@ document.write(z + "<br>");     //255，(15*16^0 + 15*16^1)
 * screen.availWidth - 可用的屏幕宽度
 * screen.availHeight - 可用的屏幕高度
 
-- location.hostname 返回 web 主机的域名
-- location.pathname 返回当前页面的路径和文件名
-- location.port 返回 web 主机的端口 （80 或 443）
-- location.protocol 返回所使用的 web 协议（http:// 或 https://）
-- location.href 返回当前页面的 URL
-- location.assign 加载新的文档
+
+- location.hostname - 返回 web 主机的域名
+- location.pathname - 返回当前页面的路径和文件名
+- location.port - 返回 web 主机的端口 （80 或 443）
+- location.protocol - 返回所使用的 web 协议（http:// 或 https://）
+- location.href - 返回当前页面的 URL
+- location.assign - 加载新的文档
+
+
+* history.back() - 加载历史列表中的前一个 URL。这与在浏览器中点击后退按钮是相同的。
+* history.forward() - 加载历史列表中的下一个 URL。这与在浏览器中点击前进按钮是相同的。
+
+window.navigator 对象在编写时可不使用 window 这个前缀。
+```html
+<div id="example"></div>
+
+<script>
+txt = "<p>浏览器代号: " + navigator.appCodeName + "</p>";
+txt+= "<p>浏览器名称: " + navigator.appName + "</p>";
+txt+= "<p>浏览器版本: " + navigator.appVersion + "</p>";
+txt+= "<p>启用Cookies: " + navigator.cookieEnabled + "</p>";
+txt+= "<p>硬件平台: " + navigator.platform + "</p>";
+txt+= "<p>用户代理: " + navigator.userAgent + "</p>";
+txt+= "<p>用户代理语言: " + navigator.systemLanguage + "</p>";
+document.getElementById("example").innerHTML=txt;
+</script>
+```
+![navigator](./img/navigator.png)
