@@ -272,4 +272,34 @@ document.write(z + "<br>");     //255，(15*16^0 + 15*16^1)
 ```
 16进制即逢16进1，其中用A，B，C，D，E，F（字母不区分大小写）这六个字母来分别表示10，11，12，13，14，15。故而有16进制每一位上可以是从小到大为0、1、2、3、4、5、6、7、8、9、A、B、C、D、E、F共16个大小不同的数。
 
+#### 在网页上显示一个钟表
+```html
+<head>
+	<script>
+	function startTime(){
+		var today=new Date();
+		var h=today.getHours();
+		var m=today.getMinutes();
+		var s=today.getSeconds();
+		// 在小于10的数字钱前加一个‘0’
+		m=checkTime(m);
+		s=checkTime(s);
+		document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+		t=setTimeout(function(){startTime()},500);
+	}
+	function checkTime(i){
+		if (i<10){
+			i="0" + i;
+		}
+		return i;
+	}
+	</script>
+</head>
 
+<body onload="startTime()">	
+	<div id="txt"></div>
+</body>
+```
+效果：
+
+16：10：05
