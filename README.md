@@ -320,6 +320,7 @@ document.write(z + "<br>");     //255，(15*16^0 + 15*16^1)
 * history.back() - 加载历史列表中的前一个 URL。这与在浏览器中点击后退按钮是相同的。
 * history.forward() - 加载历史列表中的下一个 URL。这与在浏览器中点击前进按钮是相同的。
 
+
 window.navigator 对象在编写时可不使用 window 这个前缀。
 ```html
 <div id="example"></div>
