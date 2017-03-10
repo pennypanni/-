@@ -152,7 +152,7 @@ var str = "Visit Microsoft!";
 var res = str.replace(/microsoft/i, "w3cschool");     //结果为：Visit w3cschool!
 ```
 
-#### 正则表达式修饰符[更多关于正则表达式](http://www.w3cschool.cn/jsref/jsref-obj-regexp.html)
+#### 正则表达式修饰符   [More about RegExp](http://www.w3cschool.cn/jsref/jsref-obj-regexp.html)
 
 | 修饰符         | 描述      |
 | ------------- | --------------- |
@@ -303,3 +303,14 @@ document.write(z + "<br>");     //255，(15*16^0 + 15*16^1)
 效果：
 
 16:10:05
+
+#### 可以不使用 window 这个前缀的：
+* screen.availWidth - 可用的屏幕宽度
+* screen.availHeight - 可用的屏幕高度
+
+- location.hostname 返回 web 主机的域名
+- location.pathname 返回当前页面的路径和文件名
+- location.port 返回 web 主机的端口 （80 或 443）
+- location.protocol 返回所使用的 web 协议（http:// 或 https://）
+- location.href 返回当前页面的 URL
+- location.assign 加载新的文档
