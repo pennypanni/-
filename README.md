@@ -104,6 +104,28 @@ constructor 属性返回所有 JavaScript 变量的构造函数。
 	(100 + 23).toString()
 	```
 
+#### 字符串转为数组 split()
+```javascript
+var str="How are you doing today?"
+
+document.write(str.split(" ") + "<br />")
+//输出： How,are,you,doing,today?
+
+document.write(str.split("") + "<br />")
+//输出： H,o,w, ,a,r,e, ,y,o,u, ,d,o,i,n,g, ,t,o,d,a,y,?
+```
+#### 特殊字符
+| 代码          | 输出      |
+| ------------- | --------------- |
+| \'         | 单引号      |
+| \"         | 双引号      |
+| \\         | 斜杆      |
+| \n         | 换行      |
+| \r         | 回车      |
+| \t         | tab      |
+| \b         | 空格      |
+| \f         | 换页      |
+
 #### 转为数字 Number()
 
 空字符串转换为 0。<br>
@@ -249,3 +271,5 @@ document.write(y + "<br>");     //255，(7*8^0 + 7*8^1 + 3*8^2)
 document.write(z + "<br>");     //255，(15*16^0 + 15*16^1)
 ```
 16进制即逢16进1，其中用A，B，C，D，E，F（字母不区分大小写）这六个字母来分别表示10，11，12，13，14，15。故而有16进制每一位上可以是从小到大为0、1、2、3、4、5、6、7、8、9、A、B、C、D、E、F共16个大小不同的数。
+
+
