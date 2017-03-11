@@ -354,3 +354,6 @@ document.getElementById("example").innerHTML=txt;
 #### setInterval() & setTimeout()
 * setInterval()的第二个参数指间隔的毫秒数
 * setTimeout()的第二个参数指从当前起多少毫秒后执行第一个参数
+
+#### [JavaScript Cookies](http://www.w3cschool.cn/javascript/js-cookies.html)
+JavaScript 可以使用 document.cookie 属性来创建 、读取、及删除 cookies。
