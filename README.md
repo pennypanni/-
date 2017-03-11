@@ -304,6 +304,19 @@ document.write(z + "<br>");     //255，(15*16^0 + 15*16^1)
 
 16:10:05
 
+#### setInterval()显示时钟
+```javascript
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer(){
+	var d=new Date();
+	var t=d.toLocaleTimeString();
+	document.getElementById("demo").innerHTML=t;
+}
+```
+效果：
+
+下午9:47:03
+
 #### 可以不使用 window 这个前缀的：
 *screen.availWidth* - 可用的屏幕宽度<br>
 *screen.availHeight* - 可用的屏幕高度
@@ -337,3 +350,7 @@ document.getElementById("example").innerHTML=txt;
 </script>
 ```
 ![navigator](./img/navigator.png)
+
+#### setInterval() & setTimeout()
+* setInterval()的第二个参数指间隔的毫秒数
+* setTimeout()的第二个参数指从当前起多少毫秒后执行第一个参数
