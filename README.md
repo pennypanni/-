@@ -357,3 +357,6 @@ document.getElementById("example").innerHTML=txt;
 
 #### [JavaScript Cookies](http://www.w3cschool.cn/javascript/js-cookies.html)
 JavaScript 可以使用 document.cookie 属性来创建 、读取、及删除 cookies。
+
+#### [JavaScript 浏览器对象实例](http://www.w3cschool.cn/javascript/js-ex-browser.html)
+#### [JavaScript HTML DOM 实例](http://www.w3cschool.cn/javascript/js-ex-dom.html)
